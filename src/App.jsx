@@ -12,7 +12,7 @@ function App() {
   //vacio  y la solucion es: 
   useEffect( () => {
     const obtenerLS = () => { 
-      const pacientesLS = JSON.parse(localStorage.getItem('pacientes')) ?? []; // lo que se que haya obtenido se va a colocar en el storage
+      const pacientesLS = JSON.parse(localStorage.getItem('pacientes')) ?? []; // lo que se que haya obtenido se va a colocar en el storage, esto hace que ya no se pierdan los datos
       setPacientes(pacientesLS)
 
     }
